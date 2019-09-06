@@ -1,8 +1,21 @@
+@font-face { 
+  font-family: GameOfThrones; 
+  src: url('/images/Game_of_Thrones.ttf'); 
+} 
+
+
 .title {
-  width: 100%;
+  position: absolute;
+  top: 10px;
+  /* left: -380px; */
+  width: 500px;
   text-align: center;
-  font-size: 3rem;
-  text-decoration: underline;
-  color: #2A77AE;
+  font-size: 50px;
   margin-bottom: 50px;
+  font-family: GameOfThrones;
+  font-weight: 500;
+  color: black;
 }
+
+
+

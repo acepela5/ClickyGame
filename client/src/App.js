@@ -3,9 +3,11 @@ import GameCards from "./components/GameCards";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import gameImages from "./gameImages.json";
-import Score from "./components/Score"
+import Score from "./components/Score";
+import Instructions from "./components/Instructions";
 
 class App extends Component {
+  
   state = {
     gameImages,
     userScore: 0,
@@ -57,16 +59,16 @@ class App extends Component {
     // call the components
     return (
       <Wrapper>
-        <Title>GAME DISPLAYED BELOW</Title>
+        <Title>Game  of  Clicks</Title>
         <Score userScore={this.state.userScore}
           userTopScore={this.state.userTopScore}
         />
+        <Instructions></Instructions>
         {this.state.gameImages.map(gameImages => (
           <GameCards
             clickTracker={this.clickTracker}
             id={gameImages.id}
             key={gameImages.id}
-            name={gameImages.name}
             image={gameImages.image}
 
           />

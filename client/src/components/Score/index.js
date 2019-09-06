@@ -5,12 +5,14 @@ function Score(props) {
 
     return (
         <div>
-            <div id="userScoreDisplay">
-                <p>Score: {props.userScore}</p>
-            </div>
             <div id="userTopScoreDisplay">
-                <p>Top Score: {props.userTopScore}</p>
+                <h3>Top Score:</h3><h3 className="scoreFont"> {props.userTopScore}</h3>
             </div>
+
+            <div id="userScoreDisplay">
+                <h3>Score:</h3> <h3 className="scoreFont"> {props.userScore}</h3>
+            </div>
+           
         </div>
 
     );
