@@ -18,4 +18,4 @@ In this Game of Thrones themed click game, the user clicks on an image of the ch
 Adriana Cepela - https://github.com/acepela5
 
 # Deployed Link
-
+https://acepela5.github.io/SecondClickGame/
