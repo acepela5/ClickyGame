@@ -50,6 +50,14 @@ class App extends Component {
       });
       // logic handle click  ES6
 
+        if(this.state.userScore===11){
+          alert("Congratulations, you have won!");
+          
+          this.setState({
+            userScore: 0,
+            clicked: []
+          })
+        }
 
     }
   };
